@@ -11,4 +11,4 @@ except that it always expects a header on row 0
 Building
 ========
 
-Requires Python 3.10+ and pytest 6.2+
+Requires Python 3.10+
