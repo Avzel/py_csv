@@ -1,5 +1,21 @@
-from py_csv import __version__
+import unittest
 
+class TestCSVParser(unittest.TestCase):
 
-def test_version():
-    assert __version__ == '0.1.0'
+    def setUp(self) -> None:
+        pass
+
+    def tearDown(self) -> None:
+        pass
+
+    def test_set_file(self) -> None:
+        pass
+
+    def test_read_row(self) -> None:
+        pass
+
+    def test_reset(self) -> None:
+        pass
+
+if __name__ == '__main__':
+    unittest.main()
