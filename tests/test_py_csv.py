@@ -34,13 +34,13 @@ class TestCSVParser(unittest.TestCase):
 
         with open('valid4.csv', 'w') as file:
             file.writelines([
-            '"dq and comma","new line","empty field",0,"combination of stuff"\n',
-            '""",","\n',
-            '",,"0",""",""""\n',
-            '123""""""""|*~\/<>.?-+=_^@,qwe,$%#$,\n',
-            ',\n',
-            ',rty\n',
-            '"""',
+                '"dq and comma","new line","empty field",0,"combination of stuff"\n',
+                '""",","\n',
+                '",,"0",""",""""\n',
+                '123""""""""|*~\/<>.?-+=_^@,qwe,$%#$,\n',
+                ',\n',
+                ',rty\n',
+                '"""',
                 ])
 
         with open('invalid1.csv', 'w') as file:
