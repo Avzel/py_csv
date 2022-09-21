@@ -8,6 +8,7 @@ class State(Enum):
     FREE        = object()  # In the middle of parsing a non-quoted field
     END         = object()  # At the end of the row
 
+
 class Type(Enum):
 
     NONE        = object()
