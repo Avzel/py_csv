@@ -1,7 +1,7 @@
 import os
 import unittest
 from py_csv.csv_parser import CSVParser
-from py_csv.exceptions import ParseException
+from py_csv.exceptions import CSVParseException
 
 
 class TestCSVParser(unittest.TestCase):
@@ -129,7 +129,7 @@ class TestCSVParser(unittest.TestCase):
         try:
             parser.read_row()
             self.assertFalse(True)
-        except ParseException as e:
+        except CSVParseException as e:
             self.assertEqual(e.column, 6)
             self.assertEqual(e.line, 2)
             self.assertEqual(e.row, 2)
@@ -140,7 +140,7 @@ class TestCSVParser(unittest.TestCase):
         try:
             parser.read_row()
             self.assertFalse(True)
-        except ParseException as e:
+        except CSVParseException as e:
             self.assertEqual(e.column, 8)
             self.assertEqual(e.line, 2)
             self.assertEqual(e.row, 2)
@@ -151,7 +151,7 @@ class TestCSVParser(unittest.TestCase):
         try:
             parser.read_row()
             self.assertFalse(True)
-        except ParseException as e:
+        except CSVParseException as e:
             self.assertEqual(e.column, 22)
             self.assertEqual(e.line, 2)
             self.assertEqual(e.row, 2)
